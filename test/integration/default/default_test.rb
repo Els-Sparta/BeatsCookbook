@@ -7,12 +7,12 @@
 
 describe package 'filebeat' do
   it { should be_installed }
-  its('version') { should match /6\.4/ }
+  its('version') { should match /6\.6/ }
 end
 
 describe package 'metricbeat' do
   it { should be_installed }
-  its('version') { should match /6\.4/ }
+  its('version') { should match /6\.6/ }
 end
 
 describe bash("wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -") do
